@@ -4,8 +4,8 @@ This is the official repository of my portfolio website.
 
 ## 🚀 Demo
 
-![DevR portfolio demo](demo/devr-portfolio.jpg)
-Visit: [http://developeratul.vercel.app](http://developeratul.vercel.app)
+![DevR portfolio demo](demo/demo.png)
+Visit: [https://shahidul-portfolio.web.app/](https://shahidul-portfolio.web.app/)
 
 ## 🧐 Features
 
@@ -47,8 +47,8 @@ Make sure you have those dependencies:
 Then run those commands:
 
 ```bash
-git clone git@github.com:developeratul/devr-commerce.git
-cd devr-commerce
+git clone https://github.com/shahiduljahid/protfolio-v2
+cd protfolio-v2
 yarn
 yarn lint
 cp .env.example .env.local # please change the credentials (create an account here: http://www.emailjs.com)
@@ -65,7 +65,6 @@ This project is under MIT license
 
 ## 👨‍💻 Author
 
-### 👤 Minhazur Rahman Ratul
+### 👤 Shahidul Islam Jahid
 
-- Twitter: [@developeratul](https://twitter.com/developeratul)
-- Github: [@developeratul](https://github.com/developeratul)
+- Github: [@shahiduljahid](https://github.com/shahiduljahid)
