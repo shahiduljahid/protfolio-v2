@@ -11,7 +11,7 @@ import { Skills } from "@/components/Home/Skills";
 import { WorkExperience } from "@/components/Home/WorkExperience";
 import Preloader from "@/components/Pre";
 
-import Particle from "./../components/Particle";
+import Particle from "@/components/Particle";
 
 export default function RootPage() {
   const [load, upadateLoad] = useState(true);
