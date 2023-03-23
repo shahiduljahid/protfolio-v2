@@ -538,6 +538,85 @@ a.inline-link:active::after {
   margin: 80px auto 0px;
 }
 
+/* --------- */
+/* Socials and Email */
+/* --------- */
+.socials {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.socials li a {
+  padding: 10px;
+  transition: var(--transition);
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+}
+.socials li a svg {
+  width: 20px;
+  height: 20px;
+}
+.socials::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--light-slate);
+}
+.socials li a:hover,
+.socials li a:focus {
+  transform: translateY(-3px);
+  color: var(--green);
+}
+.socials li:last-of-type {
+  margin-bottom: 20px;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+.email a {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
+  margin: 20px auto;
+  padding: 10px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xxs);
+  line-height: var(--fz-lg);
+  letter-spacing: 0.1em;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+.email a:hover,
+.email a:focus {
+  transform: translateY(-3px);
+  color: var(--green);
+}
+.email::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--light-slate);
+}
+
+
 .scrolled_nav {
   @apply !bg-white py-5 shadow-md dark:!bg-background-600;
 }

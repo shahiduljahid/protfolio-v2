@@ -30,6 +30,7 @@
     "react-transition-group": "^4.4.5",
     "react-tsparticles": "^2.9.3",
     "scrollreveal": "^4.0.9",
+    "styled-components": "^5.3.9",
     "tsparticles": "^2.9.3",
     "typewriter-effect": "^2.19.0",
     "zod": "^3.20.2"
