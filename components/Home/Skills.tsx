@@ -18,7 +18,7 @@ function Skill(props: SkillProps) {
     <div id={id} className="grid place-items-center gap-4 overflow-hidden">
       <div className="h-16 w-16 sm:h-20 sm:w-20">{icon}</div>
       <div className="w-[80px] overflow-hidden text-center sm:w-full">
-        <h2 className="truncate font-medium text-primary-600 dark:text-primary-500">{name}</h2>
+        <h2 className="truncate mt-3 font-medium text-primary-600 dark:text-primary-500">{name}</h2>
         <p className="truncate text-xs text-gray-500 dark:text-gray-400">{experienceLevel}</p>
       </div>
     </div>

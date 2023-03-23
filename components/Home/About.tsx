@@ -5,9 +5,10 @@ import { HStack, SectionBase, SectionTitle } from "@/components";
 export function About() {
   return (
     <SectionBase refKey="about" id="about">
-      <HStack className="flex flex-col items-center justify-center gap-5 lg:flex-row lg:items-start lg:gap-16">
+      <SectionTitle no="01" title="About me" className="mb-[1.5rem]" />
+      <HStack className="flex flex-col items-center justify-center gap-5 lg:items-start lg:gap-16 aboutSection">
         <div className="grid max-w-xl flex-1">
-          <SectionTitle no="01" title="About me" className="mb-[1.5rem]" />
+          
           <div className="grid gap-5">
             <p className="home-about-body">
               Hello! My name is Shahidul Islam Jahid and I am a seasoned web developer with a strong

@@ -139,7 +139,18 @@
   background: #52658a;
   border-radius: 12px;
 }
+/* --------- */
+/* about */
+/* --------- */
 
+.aboutSection{
+  flex-direction: row;
+}
+@media (max-width: 600px) {
+  .aboutSection{
+    flex-direction: column-reverse;
+  }
+}
 
 /* --------- */
 /* Work */
