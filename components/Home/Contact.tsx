@@ -45,6 +45,11 @@ export function Contact() {
   return (
     <Section refKey="contact" no="06" title="Contact">
       <div className="flex w-full flex-col items-center justify-center">
+        <h2 className="mb-5 text-5xl">Get In Touch</h2>
+        <p style={{ maxWidth: "700px", color: "#8892b0" }} className="mb-10 text-center">
+          I’m currently looking for new opportunities, my inbox is always open. Whether you have any
+          queries or just want to say hi, I’ll try my best to get back to you!
+        </p>
         <div className="flex w-full max-w-lg flex-col items-center justify-center gap-10"></div>
 
         <Form<ContactValues, typeof schema>
