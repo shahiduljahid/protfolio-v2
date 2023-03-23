@@ -1,10 +1,10 @@
-# DevR Portfolio
+# Shahidul Portfolio
 
 This is the official repository of my portfolio website.
 
 ## 🚀 Demo
 
-![DevR portfolio demo](demo/demo.png)
+![Shahidul portfolio demo](demo/demo.png)
 Visit: [https://shahidul-portfolio.web.app/](https://shahidul-portfolio.web.app/)
 
 ## 🧐 Features
