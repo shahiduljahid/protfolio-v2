@@ -1,17 +1,19 @@
-import { Footer } from "@/components/common/Footer";
-import { Nav } from "@/components/common/Nav";
-import { Toaster } from "@/components/Feedback/Toaster";
-import { ColorMode } from "@/providers/ColorMode";
-import { SectionRefProvider } from "@/providers/SectionRef";
-import "../styles/globals.css";
-import { AnalyticsWrapper } from "./AnalyticsWrapper";
+import { JetBrains_Mono } from "@next/font/google";
+import clsx from "clsx";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import Preloader from "@/components/Pre";
+
+import { Footer } from "@/components/common/Footer";
+import { Nav } from "@/components/common/Nav";
+import { Toaster } from "@/components/Feedback/Toaster";
 import Particle from "@/components/Particle";
-import { JetBrains_Mono } from "@next/font/google";
-import clsx from "clsx";
+import Preloader from "@/components/Pre";
+import { ColorMode } from "@/providers/ColorMode";
+import { SectionRefProvider } from "@/providers/SectionRef";
+
+import "../styles/globals.css";
+import { AnalyticsWrapper } from "./AnalyticsWrapper";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains",
@@ -66,27 +68,25 @@ export default function App({ Component, pageProps }) {
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
       </Head>
 
-      
-        <span  className={clsx(jetbrainsMono.variable)} >
-          <Preloader load={load} />
-          {!load && (
-            <ColorMode >
-              <Toaster />
-              <main >
-                <SectionRefProvider>
-                  <Nav />
-                  <div>
+      <span className={clsx(jetbrainsMono.variable)}>
+        <Preloader load={load} />
+        {!load && (
+          <ColorMode>
+            <Toaster />
+            <main>
+              <SectionRefProvider>
+                <Nav />
+                <div>
                   <Particle />
-                    <Component {...pageProps} />
-                    <AnalyticsWrapper />
-                  </div>
-                </SectionRefProvider>
-              </main>
-              <Footer />
-            </ColorMode>
-          )}
-        </span>
- 
+                  <Component {...pageProps} />
+                  <AnalyticsWrapper />
+                </div>
+              </SectionRefProvider>
+            </main>
+            <Footer />
+          </ColorMode>
+        )}
+      </span>
     </>
   );
 }

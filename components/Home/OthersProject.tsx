@@ -1,4 +1,3 @@
-
 import { Section } from "@/components";
 
 import OtherProjects from "../OtherProjects/OtherProjects";

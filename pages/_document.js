@@ -1,9 +1,8 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
-
   return (
-    <Html  lang="en">
+    <Html lang="en">
       <Head>
         <meta name="image" property="og:image" content="/thumbnail.png" />
         <link rel="icon" href="/thumbnail.png" />

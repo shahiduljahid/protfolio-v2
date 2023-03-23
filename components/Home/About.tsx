@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 import { HStack, SectionBase, SectionTitle } from "@/components";
