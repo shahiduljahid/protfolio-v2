@@ -1,4 +1,4 @@
-"use client";
+
 
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import type { StaticImageData } from "next/image";

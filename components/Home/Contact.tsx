@@ -1,4 +1,4 @@
-"use client";
+
 import emailjs from "@emailjs/browser";
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
 import React from "react";

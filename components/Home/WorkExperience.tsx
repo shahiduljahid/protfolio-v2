@@ -1,4 +1,4 @@
-"use client";
+
 import { Section } from "@/components";
 
 import Work from "../Experience/Work";

@@ -1,4 +1,4 @@
-"use client";
+ ;
 import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 import React from "react";
 

@@ -1,4 +1,4 @@
-"use client";
+ ;
 import clsx from "clsx";
 import type { HTMLAttributes } from "react";
 import React from "react";

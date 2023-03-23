@@ -1,4 +1,4 @@
-"use client";
+ ;
 import { Toaster as ToasterCore } from "react-hot-toast";
 
 export function Toaster() {

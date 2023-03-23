@@ -1,4 +1,4 @@
-"use client";
+ ;
 import { Container, IconButton } from "@/components";
 import { links } from "@/data/links";
 

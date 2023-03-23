@@ -1,4 +1,4 @@
-"use client";
+ ;
 import React, { useState, useEffect, useRef, createRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
