@@ -26,7 +26,12 @@ export function Contact() {
     try {
       const { name, email, message } = values;
       const data = { name, email, message };
-      await emailjs.send(`${process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID}`, `${process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID}`, data, `${process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY}`);
+      await emailjs.send(
+        `${process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID}`,
+        `${process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID}`,
+        data,
+        `${process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY}`
+      );
 
       reset();
       toast.success("Your message want sent. You will hear back from me within a business day.");
