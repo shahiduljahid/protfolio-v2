@@ -13,7 +13,6 @@ import { ColorMode } from "@/providers/ColorMode";
 import { SectionRefProvider } from "@/providers/SectionRef";
 
 import "../styles/globals.css";
-import { AnalyticsWrapper } from "./AnalyticsWrapper";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains",
@@ -79,7 +78,6 @@ export default function App({ Component, pageProps }) {
                 <div>
                   <Particle />
                   <Component {...pageProps} />
-                  <AnalyticsWrapper />
                 </div>
               </SectionRefProvider>
             </main>
