@@ -1,10 +1,10 @@
 "use client";
 
 import { Bars3Icon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import React, { useEffect } from "react";
 
 import { Button, IconButton, Link, NavLink } from "@/components";
-import { links } from "@/data/links";
 import { ColorModeToggler } from "@/providers/ColorMode";
 
 import { Container } from "../Layout";
@@ -32,7 +32,7 @@ export function Nav() {
 
   return (
     <nav
-    style={{padding:'0'}}
+      style={{ padding: "0" }}
       ref={navRef}
       className="sticky top-0 left-0 z-10 bg-white py-3 duration-300 dark:bg-background-500"
     >
@@ -41,7 +41,7 @@ export function Nav() {
           <div className="flex items-center gap-3">
             <h6 className="text-lg font-light text-primary-600 dark:text-primary-500">
               <Link href="/" className="hover:no-underline">
-                <img height="20px" width="150px" src={'/logo.png'}/>
+                <Image alt="logoImg" height={20} width={150} src={"/logo.png"} />
               </Link>
             </h6>
             <ColorModeToggler />
@@ -57,8 +57,11 @@ export function Nav() {
             <NavLink to="projects">Projects</NavLink>
             <NavLink to="othersProject">Other Project</NavLink>
             <NavLink to="contact">Contact</NavLink>
-            <a   target="_blank"
-              href="https://drive.google.com/file/d/1WOg4DovR60RMKcoI_wOQ_87EJ0WZ08yD/view" rel="noopener noreferrer">
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1WOg4DovR60RMKcoI_wOQ_87EJ0WZ08yD/view"
+              rel="noopener noreferrer"
+            >
               <Button className="w-full lg:w-auto" color="primary">
                 Resume
               </Button>

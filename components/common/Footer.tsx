@@ -51,7 +51,7 @@ export function Footer() {
           </div>
           <div>
             <p className="text-center text-gray-600 dark:text-gray-400">
-            Built with love by Shahidul Islam Jahid
+              Built with love by Shahidul Islam Jahid
             </p>
           </div>
         </div>

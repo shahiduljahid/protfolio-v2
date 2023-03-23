@@ -46,7 +46,7 @@ export function SectionRefProvider(props: SectionRefProps) {
     refs: {
       home: homeRef,
       about: aboutRef,
-      work:workRef,
+      work: workRef,
       projects: projectsRef,
       skills: skillsRef,
       othersProject: othersProjectRef,

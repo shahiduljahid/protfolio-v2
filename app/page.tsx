@@ -1,15 +1,17 @@
 "use client";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+
 import { About } from "@/components/Home/About";
 import { Contact } from "@/components/Home/Contact";
 import { Hero } from "@/components/Home/Hero";
-import { Projects } from "@/components/Home/Projects";
 import { OthersProject } from "@/components/Home/OthersProject";
+import { Projects } from "@/components/Home/Projects";
 import { Skills } from "@/components/Home/Skills";
 import { WorkExperience } from "@/components/Home/WorkExperience";
-import { useEffect, useState } from "react";
 import Preloader from "@/components/Pre";
-import { useRouter } from "next/router";
-import Particle from './../components/Particle';
+
+import Particle from "./../components/Particle";
 
 export default function RootPage() {
   const [load, upadateLoad] = useState(true);

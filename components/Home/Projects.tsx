@@ -1,10 +1,12 @@
 "use client";
 
-import { ArrowTopRightOnSquareIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
-import Image, { StaticImageData } from "next/image";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import type { StaticImageData } from "next/image";
+import Image from "next/image";
+
+import bookShop from "@/Assets/Projects/bookShop.png";
 import Esports_Ground from "@/Assets/Projects/es.png";
 import Moments from "@/Assets/Projects/moment.png";
-import bookShop from "@/Assets/Projects/bookShop.png";
 import { Button, Section } from "@/components";
 
 export type Project = {
@@ -92,8 +94,10 @@ export function Project(props: ProjectProps) {
             </span>
           ))}
         </div>
-        <p style={{paddingBottom: "70px"}} className="text-sm text-gray-600 dark:text-gray-100">{description}</p>
-        <div style={{ position: "absolute", bottom: "20px"  }} className="flex gap-3">
+        <p style={{ paddingBottom: "70px" }} className="text-sm text-gray-600 dark:text-gray-100">
+          {description}
+        </p>
+        <div style={{ position: "absolute", bottom: "20px" }} className="flex gap-3">
           {preview && (
             <a href={preview} target="_blank" rel="noreferrer">
               <Button size="sm" startIcon={<ArrowTopRightOnSquareIcon width={18} height={18} />}>
@@ -103,18 +107,59 @@ export function Project(props: ProjectProps) {
           )}
           {githubFront && (
             <a href={githubFront} target="_blank" rel="noreferrer">
-              <Button  style={{padding: "9px"}} size="sm">
-           <div style={{margin:'0',display:'flex',justifyContent:'space-between',alignItems:'center'}}><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-              <span style={{marginLeft:'2px'}}>Front End</span></div>
-              
+              <Button style={{ padding: "9px" }} size="sm">
+                <div
+                  style={{
+                    margin: "0",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                  }}
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span style={{ marginLeft: "2px" }}>Front End</span>
+                </div>
               </Button>
             </a>
           )}
           {githubBack && (
             <a href={githubBack} target="_blank" rel="noreferrer">
-              <Button style={{padding: "9px"}} size="sm">
-              <div style={{margin:'0',display:'flex',justifyContent:'space-between',alignItems:'center'}}><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-              <span style={{marginLeft:'2px'}}>Back End</span></div>
+              <Button style={{ padding: "9px" }} size="sm">
+                <div
+                  style={{
+                    margin: "0",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                  }}
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span style={{ marginLeft: "2px" }}>Back End</span>
+                </div>
               </Button>
             </a>
           )}

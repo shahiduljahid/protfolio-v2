@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx ./ --ignore-path .gitignore"
   },

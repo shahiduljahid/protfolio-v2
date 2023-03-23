@@ -1,12 +1,8 @@
 "use client";
 import React, { useState, useEffect, useRef, createRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { CSSTransition } from "react-transition-group";
-import { srConfig } from "@/utils";
 
 const Work = () => {
-  const data = [];
-
   const jobsData = [
     {
       date: "2017-12-21",
@@ -56,19 +52,6 @@ const Work = () => {
   const [tabFocus, setTabFocus] = useState(null);
   const tabs = useRef([]);
   const revealContainer = useRef(null);
-  const revealHeader = useRef(null);
-
-  // useEffect(() => {
-  //   async function animate() {
-  //     if (revealContainer.current) {
-  //       const sr = (await import("scrollreveal")).default;
-  //       sr().reveal(revealHeader.current, srConfig());
-  //       sr().reveal(revealContainer.current, srConfig());
-  //     }
-  //   }
-  //   animate();
-  // }, []);
-  
 
   const focusTab = () => {
     if (tabs.current[tabFocus]) {
@@ -89,7 +72,7 @@ const Work = () => {
   useEffect(() => focusTab(), [tabFocus]);
 
   return (
-    <Container style={{paddingTop:'0px'}} id="work" >
+    <Container style={{ paddingTop: "0px" }} id="work">
       <Row className="padding-container align-items-center justify-content-center">
         <Col ref={revealContainer} md={10}>
           <section style={{ maxWidth: 900 }} id="jobs">
@@ -141,10 +124,10 @@ const Work = () => {
 
               <div className="panels">
                 {jobsData &&
-                  jobsData.map(
-                    ({ title, url, company, range, des, nodeRef }, i) => {
-                      return (
-                        <div
+                  jobsData.map(({ title, url, company, range, des, nodeRef }, i) => {
+                    return (
+                      <div
+                        key={i}
                         className="panel"
                         id={i}
                         role="tabpanel"
@@ -158,7 +141,7 @@ const Work = () => {
                           <span>{title}</span>
                           <span className="company">
                             &nbsp;@&nbsp;
-                            <a target="_blank" href={url} className="inline-link">
+                            <a target="_blank" href={url} className="inline-link" rel="noreferrer">
                               {company}
                             </a>
                           </span>
@@ -172,10 +155,8 @@ const Work = () => {
                           </ul>
                         </div>
                       </div>
-                      
-                      );
-                    }
-                  )}
+                    );
+                  })}
               </div>
             </div>
           </section>
