@@ -1,6 +1,6 @@
 {
-  "name": "devr-portfolio",
-  "description": "Portfolio website of DevR",
+  "name": "shahidul-portfolio",
+  "description": "Portfolio website of Shahidul Islam Jahid",
   "private": true,
   "engines": {
     "node": ">=16.0.0",
