@@ -1,10 +1,8 @@
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import React, { useEffect } from "react";
-
 import { Button, IconButton, Link, NavLink } from "@/components";
 import { ColorModeToggler } from "@/providers/ColorMode";
-
 import { Container } from "../Layout";
 
 export function Nav() {
@@ -48,13 +46,12 @@ export function Nav() {
             ref={listNavRef}
             className="fixed top-0 right-0 flex h-screen w-screen max-w-md translate-x-full transform flex-col items-start justify-center gap-5 bg-white/70 p-5 shadow-lg backdrop-blur-lg duration-300 dark:bg-background-600/70 lg:static lg:h-auto lg:w-auto lg:max-w-none lg:transform-none lg:flex-row lg:items-center lg:justify-between lg:!bg-transparent lg:!p-0 lg:shadow-none lg:backdrop-blur-none"
           >
-            <NavLink to="home">Home</NavLink>
-            <NavLink to="about">About</NavLink>
-            <NavLink to="skills">Skills</NavLink>
-            <NavLink to="work">Experience</NavLink>
-            <NavLink to="projects">Projects</NavLink>
-            <NavLink to="othersProject">Other Project</NavLink>
-            <NavLink to="contact">Contact</NavLink>
+            <NavLink onClick={toggleNavBar} to="home">Home</NavLink>
+            <NavLink onClick={toggleNavBar} to="about">About</NavLink>
+            <NavLink onClick={toggleNavBar} to="skills">Skills</NavLink>
+            <NavLink onClick={toggleNavBar} to="work">Experience</NavLink>
+            <NavLink onClick={toggleNavBar} to="projects">Projects</NavLink>
+            <NavLink onClick={toggleNavBar} to="contact">Contact</NavLink>
             <a
               target="_blank"
               href="https://drive.google.com/file/d/1WOg4DovR60RMKcoI_wOQ_87EJ0WZ08yD/view"

@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import React from "react";
-
 import type { SectionRefContextValue } from "@/providers/SectionRef";
 import { useSectionRefContextValue } from "@/providers/SectionRef";
 import type { AppProps } from "@/types";
@@ -8,16 +7,18 @@ import type { AppProps } from "@/types";
 type NavLinkProps = React.HTMLAttributes<HTMLButtonElement> &
   AppProps & {
     to: keyof SectionRefContextValue["refs"];
+    onClick?: () => void; // Add onClick prop
   };
 
 export const NavLink = React.forwardRef<HTMLButtonElement, NavLinkProps>(
-  ({ to, className, children, ...props }, ref) => {
+  ({ to, className, children, onClick, ...props }, ref) => {
     const contextValue = useSectionRefContextValue();
     if (contextValue === undefined) return <></>;
     const { refs, scrollTo } = contextValue;
 
     const handleClick = () => {
       scrollTo(refs[to]);
+      if (onClick) onClick(); // Call onClick if provided
     };
 
     return (

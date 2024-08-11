@@ -80,7 +80,7 @@ export default function App({ Component, pageProps }) {
               <SectionRefProvider>
                 <Nav />
                 <div>
-                  <Particle />
+                  {/* <Particle /> */}
                   <Component {...pageProps} />
                 </div>
               </SectionRefProvider>

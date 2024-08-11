@@ -5,6 +5,7 @@ import { toast } from "react-hot-toast";
 import { z } from "zod";
 
 import { Button, Form, Input, Section, TextArea, type SubmitFn } from "@/components";
+import EarthCanvas from "@/components/canvas/Earth";
 
 const schema = z.object({
   name: z.string().trim().min(1, "Please enter your name"),
@@ -44,49 +45,55 @@ export function Contact() {
 
   return (
     <Section refKey="contact" no="06" title="Contact">
-      <div className="flex w-full flex-col items-center justify-center">
-        <h2 className="mb-5 text-5xl">Get In Touch</h2>
-        <p style={{ maxWidth: "700px", color: "#8892b0" }} className="mb-10 text-center">
-          I’m currently looking for new opportunities, my inbox is always open. Whether you have any
-          queries or just want to say hi, I’ll try my best to get back to you!
-        </p>
-        <div className="flex w-full max-w-lg flex-col items-center justify-center gap-10"></div>
-
-        <Form<ContactValues, typeof schema>
-          onSubmit={handleSubmit}
-          className="w-full max-w-xl flex-1"
-          schema={schema}
-        >
-          {({ register, formState }) => (
-            <>
-              <Input
-                label="Name"
-                registration={register("name")}
-                error={formState.errors["name"]}
-              />
-              <Input
-                type="email"
-                label="Email"
-                registration={register("email")}
-                error={formState.errors["email"]}
-              />
-              <TextArea
-                label="Message"
-                registration={register("message")}
-                error={formState.errors["message"]}
-              />
-              <Button
-                isLoading={isProcessing}
-                startIcon={<PaperAirplaneIcon width={18} height={18} />}
-                className="w-full"
-                color="primary"
-                type="submit"
-              >
-                Send
-              </Button>
-            </>
-          )}
-        </Form>
+      <div className="grid grid-cols-12 gap-2">
+        <div className="col-span-12  flex  max-w-3xl flex-col sm:col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-6">
+          <div className="flex w-full flex-col items-center justify-center">
+            <h2 className="mb-5 text-5xl">Get In Touch</h2>
+            <p style={{ maxWidth: "700px", color: "#8892b0" }} className="mb-10 text-center">
+              I’m currently looking for new opportunities, my inbox is always open. Whether you have
+              any queries or just want to say hi, I’ll try my best to get back to you!
+            </p>
+            <div className="flex w-full max-w-lg flex-col items-center justify-center gap-10"></div>
+            <Form<ContactValues, typeof schema>
+              onSubmit={handleSubmit}
+              className="w-full max-w-xl flex-1"
+              schema={schema}
+            >
+              {({ register, formState }) => (
+                <>
+                  <Input
+                    label="Name"
+                    registration={register("name")}
+                    error={formState.errors["name"]}
+                  />
+                  <Input
+                    type="email"
+                    label="Email"
+                    registration={register("email")}
+                    error={formState.errors["email"]}
+                  />
+                  <TextArea
+                    label="Message"
+                    registration={register("message")}
+                    error={formState.errors["message"]}
+                  />
+                  <Button
+                    isLoading={isProcessing}
+                    startIcon={<PaperAirplaneIcon width={18} height={18} />}
+                    className="w-full"
+                    color="primary"
+                    type="submit"
+                  >
+                    Send
+                  </Button>
+                </>
+              )}
+            </Form>
+          </div>
+        </div>
+        <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-6  h-[500px] md:h-[600px] ">
+          <EarthCanvas />
+        </div>
       </div>
     </Section>
   );
