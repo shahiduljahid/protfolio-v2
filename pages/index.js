@@ -8,7 +8,6 @@ import { Projects } from "@/components/Home/Projects";
 import { Skills } from "@/components/Home/Skills";
 import { WorkExperience } from "@/components/Home/WorkExperience";
 
-
 export default function Home() {
   return (
     <>

@@ -91,7 +91,7 @@ export function Contact() {
             </Form>
           </div>
         </div>
-        <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-6  h-[500px] md:h-[600px] ">
+        <div className="col-span-12 h-[500px] sm:col-span-12 md:col-span-12 md:h-[600px]  lg:col-span-12 xl:col-span-6 ">
           <EarthCanvas />
         </div>
       </div>

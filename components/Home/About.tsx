@@ -9,11 +9,12 @@ export function About() {
       <HStack className="aboutSection flex flex-col items-center justify-center gap-2 lg:items-start lg:gap-16">
         <div className="grid text-justify">
           <p className="home-about-body">
-            Hello! I’m Shahidul Islam Jahid from Bangladesh 🔴. I hold a Bachelor's degree in
+            Hello! I&rsquo;m Shahidul Islam Jahid from Bangladesh 🔴. I hold a {"Bachelor's"} degree
+            in
             <span className="mx-1 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
               Computer Science
             </span>
-            🎓 and am currently pursuing a Master’s in
+            🎓 and am currently pursuing a Master&rsquo;s in
             <span className="mx-1 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
               Software Engineering
             </span>

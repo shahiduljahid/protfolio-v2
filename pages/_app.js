@@ -8,7 +8,6 @@ import { Nav } from "@/components/common/Nav";
 import Email from "@/components/email";
 import { Toaster } from "@/components/Feedback/Toaster";
 import Footer from "@/components/Footer";
-import Particle from "@/components/Particle";
 import Preloader from "@/components/Pre";
 import Social from "@/components/social";
 import { ColorMode } from "@/providers/ColorMode";
@@ -80,7 +79,6 @@ export default function App({ Component, pageProps }) {
               <SectionRefProvider>
                 <Nav />
                 <div>
-                  {/* <Particle /> */}
                   <Component {...pageProps} />
                 </div>
               </SectionRefProvider>

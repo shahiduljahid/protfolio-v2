@@ -1,11 +1,9 @@
-import Image from "next/image";
-
 import { Button, Container } from "@/components";
+import ComputersCanvas from "@/components/canvas/Computer";
 import { ScrollTo, useSectionRefContextValue } from "@/providers/SectionRef";
 
-import Type from "./../Hero/Type";
-import ComputersCanvas from "@/components/canvas/Computer";
 import StarsCanvas from "./../canvas/Stars";
+import Type from "./../Hero/Type";
 
 export function Hero() {
   const contextValue = useSectionRefContextValue();
