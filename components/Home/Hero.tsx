@@ -23,7 +23,7 @@ export function Hero() {
               Shahidul Islam Jahid
             </p>
 
-            <h1 className="mb-3 h-[50px] bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-3xl  font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500 md:text-5xl md:h-[55px]">
+            <h1 className="mb-3 h-[55px] bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-3xl  font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500 md:text-5xl">
               <Type />
             </h1>
             <h2 className="mb-2 text-3xl font-bold text-gray-600 dark:text-gray-400 md:text-4xl">
