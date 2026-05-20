@@ -426,6 +426,33 @@ const skillData: Skill[] = [
       </svg>
     ),
   },
+  {
+    id: "23",
+    name: "Flask",
+    experienceLevel: "Intermediate",
+    icon: (
+      <Image
+        width={64}
+        height={64}
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/flask.svg"
+        alt="Flask Icon"
+      />
+    ),
+  },
+
+  {
+    id: "24",
+    name: "Tailwind CSS",
+    experienceLevel: "Expert",
+    icon: (
+      <Image
+        width={64}
+        height={64}
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/tailwindcss.svg"
+        alt="Tailwind CSS"
+      />
+    ),
+  },
 
   {
     id: "21",
@@ -473,6 +500,19 @@ const skillData: Skill[] = [
         height={64}
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
         alt="Linux Icon"
+      />
+    ),
+  },
+  {
+    id: "22",
+    name: "Unity",
+    experienceLevel: "Intermediate",
+    icon: (
+      <Image
+        width={64}
+        height={64}
+        src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/unity.svg"
+        alt="Unity Icon"
       />
     ),
   },

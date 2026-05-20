@@ -30,38 +30,39 @@ export function Hero() {
               I build things for the web And AI.
             </h2>
             <div className="heading-description text-justify">
-              As a proficient MERN stack developer, I possess extensive experience in developing
-              robust web applications utilizing contemporary{" "}
+              As an expert MERN and AI developer, I specialize in integrating large language models
+              (LLMs) into production web applications, building end-to-end solutions that combine
+              conversational AI with reliable frontend and backend systems. I build robust web
+              applications using modern
               <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
-                Javascript{" "}
-              </span>{" "}
-              libraries and frameworks including like
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
-                {" "}
-                React.js{" "}
+                {' '}
+                Javascript{' '}
               </span>
-              ,{" "}
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500 ">
+              libraries and frameworks such as
+              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
+                {' '}
+                React.js{' '}
+              </span>
+              ,
+              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">{' '}
                 Next.js
-              </span>{" "}
-              and{" "}
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
-                Node.js{" "}
               </span>
-              In addition to my expertise in web development, I am also skilled in{" "}
+              {' '}and{' '}
               <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
+                Node.js
+              </span>
+              . On the backend I work with
+              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">{' '}
                 Python
-              </span>{" "}
-              and frameworks like{" "}
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
-                FastAPI{" "}
               </span>
-              My research focuses on deep learning and neural networks, with a passion for{" "}
+              {' '}and frameworks like{' '}
               <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
-                integrating AI with web technologies
+                FastAPI
               </span>
-              . I am dedicated to advancing my skills and staying at the forefront of industry
-              standards.
+              . My research and practice focus on deep learning, model fine-tuning, prompt
+              engineering, and responsible deployment of LLMs—delivering practical AI integrations
+              that improve user experiences. I am committed to advancing AI-web solutions and
+              shipping production-grade systems.
             </div>
             <div className="mt-3 flex gap-3">
               <ScrollTo to="projects">

@@ -14,18 +14,14 @@ export function About() {
             <span className="mx-1 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
               Computer Science
             </span>
-            🎓 and am currently pursuing a Master&rsquo;s in
+            🎓. I completed my Master&rsquo;s in
             <span className="mx-1 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
               Software Engineering
             </span>
-            📚 at the University of Electronic Science and Technology of China. My research focuses
-            on
+            📚 at the University of Electronic Science and Technology of China and am now
+            pursuing a PhD at the same university, focusing my research on
             <span className="mx-1 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
-              deep learning
-            </span>
-            🎥🤖 , particularly
-            <span className="mx-1 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
-              Video Reasoning with large language models (LLMs)
+              Text-to-SQL and LLM integration
             </span>
             .
           </p>

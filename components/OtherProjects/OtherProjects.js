@@ -7,8 +7,45 @@ const OtherProjects = () => {
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
 
-  const GRID_LIMIT = 6;
+  const GRID_LIMIT = 3;
   const projects = [
+    {
+      external: "https://github.com/shahiduljahid/Smart_Traffic_Sandbox",
+      title: "Smart Traffic Sandbox",
+      tech: ["Python", "YOLOv11", "BoT-SORT", "OpenCV", "Flask", "SAHI"],
+      githubFront: "https://github.com/shahiduljahid/Smart_Traffic_Sandbox",
+      githubBack: "",
+      description:
+        "Built an end-to-end vehicle detection and tracking system using YOLOv11s and BoT-SORT, upgraded from a YOLOv8n + DeepSORT baseline. Added TTA/SAHI evaluation, tracking analysis, and a Flask dashboard with live confidence/IoU controls for real-time monitoring.",
+    },
+    {
+      external: "https://www.youtube.com/watch?v=VAqPvSXJvRI",
+      title: "Pro Car Racing",
+      tech: ["Unity", "C#"],
+      githubFront: "https://drive.google.com/file/d/16Kid7LoSvmHSNbB7Jj_HsrMmR0cd9kAP/view",
+      githubBack: "https://drive.google.com/file/d/1ZhUrYSzmJwvlp2Pk1Q8Bds43Xq4d62eq/view",
+      description:
+        "Developed a car racing game in Unity, using Asset Store tracks and car models. Programmed gameplay interactivity with C# scripts, integrated multiple camera views, added racing music, and implemented local storage for player progress. Created custom AI opponents with independent tracks and performance tracking.",
+    },
+    {
+      external: "https://your--moments.web.app/",
+      title: "MOMENTS",
+      tech: ["React", "Node.js", "express.js", "Firebase", "Mongo DB", "Stripe"],
+      githubFront: "https://github.com/shahiduljahid/Moments",
+      githubBack: "https://github.com/shahiduljahid/wedding-photographer-server",
+      description:
+        "Moments is a single page web application created using React.js for a wedding photography agency. It provides users with the ability to browse and book services, view their booking history, and leave reviews for the services they received. Additionally, it provides administrators with the ability to manage services, view orders, and add new administrators.",
+    },
+    {
+      external: "https://bookshop-9dab3.web.app/",
+      title: "Book Shop",
+      tech: ["React", "Node.js", "Firebase", "Mongo DB"],
+      githubFront: "https://github.com/shahiduljahid/bookshopclient",
+      githubBack: "https://github.com/shahiduljahid/bookshopserver",
+      description:
+        "This is a Book shop web application created using React.js. It allows users to place orders and view their order history, while administrators can add and delete products, and manage the application through a dashboard. The application has a responsive design that supports both desktop and mobile devices.",
+    },
+
     {
       external: "https://doctor-app-8c617.web.app/",
       title: "Doctor Portal",
@@ -17,24 +54,6 @@ const OtherProjects = () => {
       githubBack: "https://github.com/shahiduljahid/doctor-portal-server",
       description:
         "It's a Doctor Portal’s Website where authenticated users can Register Appointment for doctor and check their appointments status. On the Admin dashboard admin can add/delete/update any appointments and change appointments status",
-    },
-    {
-      external: "https://faruk-portfolio.web.app/",
-      title: "Faruk Portfolio",
-      tech: ["React", "Bootstrap"],
-      githubFront: "https://github.com/shahiduljahid/faruk-Portfolio",
-      githubBack: "",
-      description:
-        "This is a portfolio website for Faruk, a graphic designer, built using React and Bootstrap. The website includes features such as a home page introducing Faruk and his work, a portfolio page with a gallery of Faruk's projects, an about page providing information about Faruk's background and experience, and a contact page with a form to send Faruk a message.",
-    },
-    {
-      external: "https://be-leaf.web.app/",
-      title: "Be Leaf",
-      tech: ["React", "Bootstrap"],
-      githubFront: "https://github.com/shahiduljahid/be-leaf",
-      githubBack: "",
-      description:
-        "created a landing page for Be Leaf, an online plant selling company, using React and Bootstrap. The landing page features a clean and modern design with responsive elements that adjust to different screen sizes. Overall, the landing page effectively conveys the company's brand and mission while providing a seamless user experience for potential customers.",
     },
   ];
   const firstSix = projects.slice(0, GRID_LIMIT);

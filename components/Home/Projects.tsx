@@ -2,7 +2,10 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import type { StaticImageData } from "next/image";
 import Image from "next/image";
 
-import bookShop from "@/Assets/Projects/bookShop.png";
+// import bookShop from "@/Assets/Projects/bookShop.png";
+import personalizeAI from "@/Assets/Projects/personalizeAI.png";
+import SIJAI from "@/Assets/Projects/SIJAI.png";
+import text2sql from "@/Assets/Projects/text2sql.png";
 import Esports_Ground from "@/Assets/Projects/es.png";
 import Moments from "@/Assets/Projects/moment.png";
 import { Button, Section } from "@/components";
@@ -12,7 +15,7 @@ export type Project = {
   category: string;
   name: string;
   description: string;
-  imageURL: StaticImageData;
+  imageURL: StaticImageData | string;
   stack: string[];
   githubFront?: string;
   githubBack?: string;
@@ -36,27 +39,64 @@ const projectData: Project[] = [
   {
     id: "2",
     category: "Launched",
-    preview: "https://your--moments.web.app/",
-    name: "MOMENTS",
-    stack: ["React", "Node.js", "express.js", "Firebase", "Mongo DB", "Stripe"],
-    githubFront: "https://github.com/shahiduljahid/Moments",
-    githubBack: "https://github.com/shahiduljahid/wedding-photographer-server",
-    imageURL: Moments,
+    preview: "https://personalizeai.vercel.app/",
+    name: "AI Personalize Learning App",
+    stack: ["React", "Flask", "Python", "OpenAI / Gemini", "MongoDB", "Firebase"],
+    githubFront: "https://github.com/shahiduljahid/AIPersonalizeLearningApp",
+    githubBack: "https://github.com/shahiduljahid/AIPersonalizeLearningApp",
+    imageURL: personalizeAI,
     description:
-      "Moments is a single page web application created using React.js for a wedding photography agency. It provides users with the ability to browse and book services, view their booking history, and leave reviews for the services they received. Additionally, it provides administrators with the ability to manage services, view orders, and add new administrators.",
+      "AI Personalize Learning App delivers adaptive learning paths and interactive quizzes powered by multiple AI providers. It generates personalized roadmaps, curated resources, and formative quizzes based on a learner's goals and progress. Educators can review generated materials while users get instant feedback, curated study plans, and suggested resources — all integrated with authentication and a lightweight backend for persistent profiles.",
   },
   {
     id: "3",
     category: "Launched",
-    preview: "https://bookshop-9dab3.web.app/",
-    name: "Book Shop",
-    stack: ["React", "Node.js", "Firebase", "Mongo DB"],
-    githubFront: "https://github.com/shahiduljahid/bookshopclient",
-    githubBack: "https://github.com/shahiduljahid/bookshopserver",
-    imageURL: bookShop,
+    preview: "https://text2sql-frontend-psi.vercel.app/",
+    name: "Text2SQL AI Dashboard",
+    stack: ["Python", "FastAPI", "React", "Postgres", "LLM (OpenAI/GPT)"],
+    githubFront: "https://github.com/shahiduljahid/text2sql_dashboard",
+    githubBack: "https://github.com/shahiduljahid/text2sql_dashboard",
+    imageURL: text2sql,
     description:
-      "This is a Book shop web application created using React.js. It allows users to place orders and view their order history, while administrators can add and delete products, and manage the application through a dashboard. The application has a responsive design that supports both desktop and mobile devices.",
+      "Text2SQL AI Dashboard converts natural language questions into SQL using a backend LLM service and visualizes results. The app lets users add datasets, inspect schema, run NL queries to generate SQL, and view the raw JSON results. Includes a full-stack repo with frontend UI and a Python backend for query execution and model integration.",
   },
+  {
+    id: "4",
+    category: "Launched",
+    preview: "https://shahidulai.vercel.app/",
+    name: "SIJ-AI",
+    stack: ["Next.js", "React", "Supabase", "TypeScript", "LLM Integration"],
+    githubFront: "https://github.com/shahiduljahid/SIJ-AI",
+    githubBack: "https://github.com/shahiduljahid/SIJ-AI",
+    imageURL: SIJAI,
+    description:
+      "SIJ-AI is a generative chat application built with Next.js and Supabase that supports multiple models, persistent chat histories, user profiles, and context management. It provides a simple UI for asking questions, managing models, and integrating LLMs for personalized conversational experiences.",
+  },
+  // {
+  //   id: "4",
+  //   category: "Launched",
+  //   preview: "https://your--moments.web.app/",
+  //   name: "MOMENTS",
+  //   stack: ["React", "Node.js", "express.js", "Firebase", "Mongo DB", "Stripe"],
+  //   githubFront: "https://github.com/shahiduljahid/Moments",
+  //   githubBack: "https://github.com/shahiduljahid/wedding-photographer-server",
+  //   imageURL: Moments,
+  //   description:
+  //     "Moments is a single page web application created using React.js for a wedding photography agency. It provides users with the ability to browse and book services, view their booking history, and leave reviews for the services they received. Additionally, it provides administrators with the ability to manage services, view orders, and add new administrators.",
+  // },
+
+  // {
+  //   id: "5",
+  //   category: "Launched",
+  //   preview: "https://bookshop-9dab3.web.app/",
+  //   name: "Book Shop",
+  //   stack: ["React", "Node.js", "Firebase", "Mongo DB"],
+  //   githubFront: "https://github.com/shahiduljahid/bookshopclient",
+  //   githubBack: "https://github.com/shahiduljahid/bookshopserver",
+  //   imageURL: bookShop,
+  //   description:
+  //     "This is a Book shop web application created using React.js. It allows users to place orders and view their order history, while administrators can add and delete products, and manage the application through a dashboard. The application has a responsive design that supports both desktop and mobile devices.",
+  // },
 ];
 
 export function Project(props: ProjectProps) {

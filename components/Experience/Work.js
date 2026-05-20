@@ -4,6 +4,37 @@ import { Col, Container, Row } from "react-bootstrap";
 const Work = () => {
   const jobsData = [
     {
+      date: "2025-10-01",
+      title: "Senior Front End Engineer",
+      company: "PNS",
+      location: "Remote",
+      range: "(October 2025 - February 2026)",
+      url: "https://fbti.pns.hk/en",
+      des: [
+        "Senior Front End Engineer — created the PNS dashboard and main app using Next.js 15, TypeScript, and Tailwind CSS",
+        "Implemented a 12-question multilingual quiz flow with progress tracking and localStorage persistence",
+        "Built responsive, performant UI and optimized images and loading states",
+        "Led frontend architecture, i18n integration, and deployment workflows",
+      ],
+      nodeRef: createRef(null),
+    },
+    {
+      date: "2024-10-01",
+      title: "Senior Front End Developer",
+      company: "SOLULU",
+      location: "Remote",
+      range: "(October - December) 2024",
+      url: "https://soluludev-client.vercel.app/en",
+      des: [
+        "Designed and developed the admin dashboard and panel using Next.js and ShadCN for a responsive UI",
+        "Implemented NextAuth for secure API token handling and authentication",
+        "Managed client-side token handling and authentication to enhance security",
+        "Built a helper onboarding and management system to streamline operations",
+        "Developed a helper scheduler to optimize task scheduling",
+      ],
+      nodeRef: createRef(null),
+    },
+    {
       date: "2017-12-21",
       title: "Front End Developer",
       company: "Lively",
