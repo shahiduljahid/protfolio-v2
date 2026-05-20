@@ -2,12 +2,10 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import type { StaticImageData } from "next/image";
 import Image from "next/image";
 
-// import bookShop from "@/Assets/Projects/bookShop.png";
+import Esports_Ground from "@/Assets/Projects/es.png";
 import personalizeAI from "@/Assets/Projects/personalizeAI.png";
 import SIJAI from "@/Assets/Projects/SIJAI.png";
 import text2sql from "@/Assets/Projects/text2sql.png";
-import Esports_Ground from "@/Assets/Projects/es.png";
-import Moments from "@/Assets/Projects/moment.png";
 import { Button, Section } from "@/components";
 
 export type Project = {

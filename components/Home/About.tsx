@@ -18,8 +18,8 @@ export function About() {
             <span className="mx-1 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
               Software Engineering
             </span>
-            📚 at the University of Electronic Science and Technology of China and am now
-            pursuing a PhD at the same university, focusing my research on
+            📚 at the University of Electronic Science and Technology of China and am now pursuing a
+            PhD at the same university, focusing my research on
             <span className="mx-1 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
               Text-to-SQL and LLM integration
             </span>

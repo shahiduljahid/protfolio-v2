@@ -35,27 +35,25 @@ export function Hero() {
               conversational AI with reliable frontend and backend systems. I build robust web
               applications using modern
               <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
-                {' '}
-                Javascript{' '}
-              </span>
-              libraries and frameworks such as
+                Javascript
+              </span>{" "}
+              libraries and frameworks such as{" "}
               <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
-                {' '}
-                React.js{' '}
+                React.js
               </span>
-              ,
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">{' '}
+              ,{" "}
+              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
                 Next.js
-              </span>
-              {' '}and{' '}
+              </span>{" "}
+              and{" "}
               <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
                 Node.js
               </span>
-              . On the backend I work with
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">{' '}
+              . On the backend I work with{" "}
+              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
                 Python
-              </span>
-              {' '}and frameworks like{' '}
+              </span>{" "}
+              and frameworks like{" "}
               <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text font-extrabold text-transparent dark:from-primary-500 dark:to-secondary-500">
                 FastAPI
               </span>
